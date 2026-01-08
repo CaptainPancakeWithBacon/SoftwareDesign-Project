@@ -9,8 +9,8 @@ public class WaffleFactory extends BakeryFactory {
             case "luikse" -> {
                 return new Waffle("Luikse", (double)6.5F);
             }
-            case "stroopwafel" -> {
-                return new Waffle("Stroopwafel", (double)5.5F);
+            case "amerikaanse" -> {
+                return new Waffle("Amerikaanse", (double)5.5F);
             }
             default -> {
                 return new Waffle("Brusselse", (double)6.0F);
