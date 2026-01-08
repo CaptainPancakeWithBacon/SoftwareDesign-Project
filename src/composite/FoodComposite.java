@@ -2,6 +2,7 @@ package src.composite;
 
 import src.products.IFood;
 import src.state.FoodState;
+import src.state.RawState;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,16 +16,6 @@ public class FoodComposite implements IFood {
         this.name = name;
         this.components = new ArrayList<>();
         this.state = new RawState();
-    }
-
-    @Override
-    public void setState(FoodState state) {
-        this.state = state;
-    }
-
-    @Override
-    public FoodState getState() {
-        return this.state;
     }
 
     public void addComponent(IFood food) {
@@ -45,7 +36,7 @@ public class FoodComposite implements IFood {
             return name + " (leeg) - Status: " + state.getStateName();
         }
 
-        StringBuilder description = new StringBuilder(name + " bevat (Status: " + state.getStateName() + ") + :\n");
+        StringBuilder description = new StringBuilder(name + " bevat (Status: " + state.getStateName() + "):\n");
         for (IFood component : components) {
             String componentDesc = component.getDescription();
             String[] lines = componentDesc.split("\n");
@@ -83,6 +74,7 @@ public class FoodComposite implements IFood {
 
     @Override
     public void setState(FoodState state) {
+        this.state = state;
         // Composite doesn't have its own state, it delegates to components
         for (IFood component : components) {
             component.setState(state);
@@ -92,6 +84,6 @@ public class FoodComposite implements IFood {
     @Override
     public FoodState getState() {
         // Return null for composite as it doesn't have a single state
-        return null;
+        return this.state;
     }
 }
