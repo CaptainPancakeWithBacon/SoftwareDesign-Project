@@ -21,7 +21,7 @@ public class FactoryTest {
 
         System.out.println("\n--- Testing WaffleFactory ---");
         testProduct(waffleFactory, "luikse");
-        testProduct(waffleFactory, "stroopwafel");
+        testProduct(waffleFactory, "amerikaanse");
         testProduct(waffleFactory, "brusselse");
 
         System.out.println("\n=== All tests completed! ===");
