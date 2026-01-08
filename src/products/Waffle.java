@@ -1,17 +1,22 @@
 package src.products;
 
+import src.state.FoodState;
+import src.state.RawState;
+
 public class Waffle implements IFood {
     private String type;
     private double basePrice;
+    private FoodState state;
 
     public Waffle(String type, double basePrice) {
         this.type = type;
         this.basePrice = basePrice;
+        this.state = new RawState();
     }
 
     @Override
     public String getDescription() {
-        return type + " wafel";
+        return type + " wafel (" + state.getStateName() + ")";
     }
 
     @Override
@@ -21,7 +26,16 @@ public class Waffle implements IFood {
 
     @Override
     public void prepare() {
-        System.out.println("Beslag maken voor " + type + " wafel...");
-        System.out.println("Wafel bakken in de wafelijzer...");
+        state.prepare(this);
+    }
+
+    @Override
+    public void setState(FoodState state) {
+        this.state = state;
+    }
+
+    @Override
+    public FoodState getState() {
+        return state;
     }
 }

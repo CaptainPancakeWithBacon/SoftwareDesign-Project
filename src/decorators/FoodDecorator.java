@@ -1,6 +1,7 @@
 package src.decorators;
 
 import src.products.IFood;
+import src.state.FoodState;
 
 public abstract class FoodDecorator implements IFood {
 
@@ -13,5 +14,15 @@ public abstract class FoodDecorator implements IFood {
     @Override
     public void prepare() {
         food.prepare(); // delegate by default
+    }
+
+    @Override
+    public void setState(FoodState state) {
+        food.setState(state);
+    }
+
+    @Override
+    public FoodState getState() {
+        return food.getState();
     }
 }
