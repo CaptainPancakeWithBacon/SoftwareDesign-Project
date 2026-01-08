@@ -3,7 +3,7 @@ Waar design patterns net zo perfect samenwerken als beslag en boter
 
 Welkom! Stap binnen bij Bakkerij de Pannenkoeken, een plek waar de geur van versgebakken pannenkoeken je tegemoet komt en waar software design patterns ongemerkt achter de schermen hun magie doen.
 
-Dit Java-project laat zien hoe zes bekende design patterns samenwerken in één overzichtelijk, uitbreidbaar en vooral lekker logisch systeem. Geen theoretische voorbeelden, maar een echte bakkerij — compleet met bestellingen, toppings, combodeals en kortingsacties.
+Dit Java-project laat zien hoe zes bekende design patterns samenwerken in een overzichtelijk, uitbreidbaar en vooral lekker logisch systeem. Geen theoretische voorbeelden, maar een echte bakkerij compleet met bestellingen, toppings, combodeals en kortingsacties.
 
 ## 👨‍🍳 De bakkers achter de schermen
 

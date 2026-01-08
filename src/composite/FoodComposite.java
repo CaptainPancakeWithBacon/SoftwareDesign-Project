@@ -1,6 +1,7 @@
 package src.composite;
 
 import src.products.IFood;
+import src.state.FoodState;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,5 +64,19 @@ public class FoodComposite implements IFood {
             }
             System.out.println("=== " + name + " is klaar! ===");
         }
+    }
+
+    @Override
+    public void setState(FoodState state) {
+        // Composite doesn't have its own state, it delegates to components
+        for (IFood component : components) {
+            component.setState(state);
+        }
+    }
+
+    @Override
+    public FoodState getState() {
+        // Return null for composite as it doesn't have a single state
+        return null;
     }
 }
