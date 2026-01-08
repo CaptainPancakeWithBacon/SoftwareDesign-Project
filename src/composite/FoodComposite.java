@@ -9,10 +9,22 @@ import java.util.List;
 public class FoodComposite implements IFood {
     private String name;
     private List<IFood> components;
+    private FoodState state;
 
     public FoodComposite(String name) {
         this.name = name;
         this.components = new ArrayList<>();
+        this.state = new RawState();
+    }
+
+    @Override
+    public void setState(FoodState state) {
+        this.state = state;
+    }
+
+    @Override
+    public FoodState getState() {
+        return this.state;
     }
 
     public void addComponent(IFood food) {
@@ -30,10 +42,10 @@ public class FoodComposite implements IFood {
     @Override
     public String getDescription() {
         if (components.isEmpty()) {
-            return name + " (leeg)";
+            return name + " (leeg) - Status: " + state.getStateName();
         }
 
-        StringBuilder description = new StringBuilder(name + " bevat:\n");
+        StringBuilder description = new StringBuilder(name + " bevat (Status: " + state.getStateName() + ") + :\n");
         for (IFood component : components) {
             String componentDesc = component.getDescription();
             String[] lines = componentDesc.split("\n");
@@ -55,7 +67,10 @@ public class FoodComposite implements IFood {
 
     @Override
     public void prepare() {
-        System.out.println("=== Bereiden van " + name + " ===");
+        System.out.println("=== " + name
+                + " wordt bereid (Huidige status: "
+                + state.getStateName() + ") ===");
+        state.prepare(this);
         if (components.isEmpty()) {
             System.out.println("Geen items om te bereiden!");
         } else {
