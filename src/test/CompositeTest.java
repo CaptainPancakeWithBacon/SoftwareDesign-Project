@@ -14,10 +14,10 @@ public class CompositeTest {
 
         // Create individual food items (Leaf nodes)
         System.out.println("--- Creating Individual Items ---");
-        IFood pancake1 = new Pancake("amerikaans");
-        IFood pancake2 = new Pancake("klassiek");
-        IFood waffle1 = new Waffle("luikse");
-        IFood waffle2 = new Waffle("brusselse");
+        IFood pancake1 = new Pancake("Amerikaanse", 7.0);
+        IFood pancake2 = new Pancake("Klassieke", 5.5);
+        IFood waffle1 = new Waffle("Luikse", 6.5);
+        IFood waffle2 = new Waffle("Brusselse", 6.0);
 
         System.out.println("Created: " + pancake1.getDescription());
         System.out.println("Created: " + pancake2.getDescription());
@@ -47,12 +47,12 @@ public class CompositeTest {
         // Create nested composite (Composite containing composites)
         System.out.println("\n--- Creating Nested Composite ---");
         FoodComposite combo1 = new FoodComposite("Combo 1");
-        combo1.addComponent(new Pancake("zuidafrikaanse"));
-        combo1.addComponent(new Waffle("amerikaanse"));
+        combo1.addComponent(new Pancake("Zuid Afrikaanse", 6.0));
+        combo1.addComponent(new Waffle("Amerikaanse", 5.5));
 
         FoodComposite combo2 = new FoodComposite("Combo 2");
-        combo2.addComponent(new Pancake("amerikaans"));
-        combo2.addComponent(new Waffle("luikse"));
+        combo2.addComponent(new Pancake("Amerikaanse", 7.0));
+        combo2.addComponent(new Waffle("Luikse", 6.5));
 
         FoodComposite megaCombo = new FoodComposite("Mega Party Combo");
         megaCombo.addComponent(combo1);
@@ -79,11 +79,11 @@ public class CompositeTest {
         // Demonstrate adding/removing components
         System.out.println("\n--- Modifying Composite ---");
         FoodComposite customCombo = new FoodComposite("Custom Combo");
-        customCombo.addComponent(new Pancake("klassiek"));
+        customCombo.addComponent(new Pancake("Klassieke", 5.5));
         System.out.println("After adding pancake:");
         System.out.println("Prijs: €" + String.format("%.2f", customCombo.getPrice()));
 
-        IFood tempWaffle = new Waffle("brusselse");
+        IFood tempWaffle = new Waffle("Brusselse", 6.0);
         customCombo.addComponent(tempWaffle);
         System.out.println("\nAfter adding waffle:");
         System.out.println("Prijs: €" + String.format("%.2f", customCombo.getPrice()));
