@@ -61,9 +61,7 @@ public class CompositeTest {
         System.out.println(megaCombo.getDescription());
         System.out.println("Totale prijs: €" + String.format("%.2f", megaCombo.getPrice()));
 
-        // Demonstrate unified interface (treating leaf and composite the same)
-        System.out.println("\n--- Demonstrating Unified Interface ---");
-        System.out.println("Treating all items the same through IFood interface:\n");
+        System.out.println("\n--- Unified Interface ---");
 
         IFood[] items = {pancake1, breakfastCombo, familyMeal};
         for (IFood item : items) {
@@ -72,11 +70,9 @@ public class CompositeTest {
             System.out.println();
         }
 
-        // Demonstrate preparation of composite
         System.out.println("--- Preparing Breakfast Combo ---");
         breakfastCombo.prepare();
 
-        // Demonstrate adding/removing components
         System.out.println("\n--- Modifying Composite ---");
         FoodComposite customCombo = new FoodComposite("Custom Combo");
         customCombo.addComponent(new Pancake("Klassieke", 5.5));
@@ -92,11 +88,7 @@ public class CompositeTest {
         System.out.println("\nAfter removing waffle:");
         System.out.println("Prijs: €" + String.format("%.2f", customCombo.getPrice()));
 
-        // INTEGRATION: Composite + Decorator patterns
         System.out.println("\n--- Composite + Decorator Integration ---");
-        System.out.println("Demonstrating how both patterns work together:\n");
-
-        // Scenario 1: Decorated items in a composite
         FoodComposite decoratedCombo = new FoodComposite("Deluxe Combo");
         decoratedCombo.addComponent(new ChocolateDecorator(new Pancake("Amerikaanse", 7.0)));
         decoratedCombo.addComponent(new BerriesDecorator(new Waffle("Luikse", 6.5)));
@@ -104,7 +96,6 @@ public class CompositeTest {
         System.out.println(decoratedCombo.getDescription());
         System.out.println("Totale prijs: €" + String.format("%.2f", decoratedCombo.getPrice()));
 
-        // Scenario 2: Decorating an entire composite
         System.out.println("\n--- Decorating Entire Composite ---");
         FoodComposite plainCombo = new FoodComposite("Basis Combo");
         plainCombo.addComponent(new Pancake("Klassieke", 5.5));
@@ -115,6 +106,5 @@ public class CompositeTest {
         System.out.println("Totale prijs: €" + String.format("%.2f", chocolateCombo.getPrice()));
 
         System.out.println("\n=== All Composite Pattern tests completed! ===");
-        System.out.println("(Including Composite + Decorator integration)");
     }
 }

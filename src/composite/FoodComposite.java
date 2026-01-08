@@ -7,10 +7,6 @@ import src.state.RawState;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Composite pattern implementation for grouping multiple food items into a meal combo.
- * This class implements IFood and can contain multiple IFood components (both individual items and other composites).
- */
 public class FoodComposite implements IFood {
     private String name;
     private List<IFood> components;
@@ -32,23 +28,14 @@ public class FoodComposite implements IFood {
         return this.state;
     }
 
-    /**
-     * Add a food component to this composite
-     */
     public void addComponent(IFood food) {
         components.add(food);
     }
 
-    /**
-     * Remove a food component from this composite
-     */
     public void removeComponent(IFood food) {
         components.remove(food);
     }
 
-    /**
-     * Get all components in this composite
-     */
     public List<IFood> getComponents() {
         return new ArrayList<>(components);
     }
@@ -61,7 +48,6 @@ public class FoodComposite implements IFood {
 
         StringBuilder description = new StringBuilder(name + " bevat (Status: " + state.getStateName() + ") + :\n");
         for (IFood component : components) {
-            // Indent nested descriptions
             String componentDesc = component.getDescription();
             String[] lines = componentDesc.split("\n");
             for (String line : lines) {
