@@ -179,7 +179,7 @@ Main.java laat het hele proces zien
 Ontworpen om helder, leerzaam en uitbreidbaar te zijn
 
 ##  👨🏼‍🍳👨🏼‍🍳 Werkverdeling Chefs
-Om in de bakkerij stress te voorkomen en chaos goed the managen hebben onze sterchefs een goede 50/50 verdeling afgesproken om mekaar goed te onderstenen.
+Om in de bakkerij stress te voorkomen en chaos goed the managen hebben onze sterchefs een goede 50/50 verdeling afgesproken om mekaar goed te ondersteunen.
 
 De chefs zien in dat een hele bakkerij managen allen niet gaat maar dat het wel essentieel is om van iedere stap iets af te weten en hebben hun werk dus ook op die manier verdeeld.
 
