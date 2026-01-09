@@ -1,4 +1,4 @@
-# 🥞 Bakkerij de Pannenkoeken (https://github.com/CaptainPancakeWithBacon/SoftwareDesign-Project)
+# 🥞 Bakkerij de Pannenkoeken [project link](https://github.com/CaptainPancakeWithBacon/SoftwareDesign-Project)
 Waar design patterns net zo perfect samenwerken als beslag en boter
 
 Welkom! Stap binnen bij Bakkerij de Pannenkoeken, een plek waar de geur van versgebakken pannenkoeken je tegemoet komt en waar software design patterns ongemerkt achter de schermen hun magie doen.
