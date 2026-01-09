@@ -170,9 +170,7 @@ Deze bakkerij staat open voor groei:
 
 Alles kan, zonder bestaande code te breken.
 
----
-
-### 🧪 Tests & Demo
+## 🧪 Tests & Demo
 
 Alle patterns hebben hun eigen testklasse
 
@@ -180,16 +178,12 @@ Main.java laat het hele proces zien
 
 Ontworpen om helder, leerzaam en uitbreidbaar te zijn
 
----
-
-###  👨🏼‍🍳👨🏼‍🍳 Werkverdeling Chefs
+##  👨🏼‍🍳👨🏼‍🍳 Werkverdeling Chefs
 Om in de bakkerij stress te voorkomen en chaos goed the managen hebben onze sterchefs een goede 50/50 verdeling afgesproken om mekaar goed te onderstenen.
 
 De chefs zien in dat een hele bakkerij managen allen niet gaat maar dat het wel essentieel is om van iedere stap iets af te weten en hebben hun werk dus ook op die manier verdeeld.
 
----
-
-### 🥞 Tot slot
+## 🥞 Tot slot
 
 Bakkerij de Pannenkoeken is geen droge design-pattern-opdracht, maar een verhaal waarin software-architectuur tot leven komt.
 
@@ -201,4 +195,4 @@ doordacht van binnen
 
 en altijd uit te breiden met iets extra's
 
-### Eet smakelijk — en veel programmeerplezier! 🚀🥞
+### Eet smakelijk! 🚀🥞
