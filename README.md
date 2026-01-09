@@ -32,7 +32,7 @@ Achter elke stap schuilt een design pattern.
 
 ## 🧱 De fundamenten van onze bakkerij (Design Patterns)
 
-### 🏭 1. Factory Pattern – De bakker achter de toonbank
+### 🏭 1. Factory Pattern – De bakker achter de toonbank (Chef Gijs)
 
 De klant zegt wat hij wil, niet hoe het gemaakt wordt.
 
@@ -51,7 +51,7 @@ De Factory zorgt ervoor dat:
 
 ---
 
-### 🧑‍🍳 2. Builder Pattern – De chef in de keuken
+### 🧑‍🍳 2. Builder Pattern – De chef in de keuken (Chef Lochlan)
 
 Sommige bestellingen zijn simpel. Andere zijn… kunstwerken.
 
@@ -68,7 +68,7 @@ Zo kun je stap voor stap een product samenstellen zonder chaos in de code.
 
 ---
 
-### 🧺 3. Composite Pattern – De ontbijtcombo's
+### 🧺 3. Composite Pattern – De ontbijtcombo's (Chef Gijs)
 
 Waarom één item bestellen als je ook een combo kunt nemen?
 
@@ -84,7 +84,7 @@ Voor de kassa is een combo gewoon ook eten.
 
 ---
 
-### 🍫 4. Decorator Pattern – Extra toppings, altijd welkom
+### 🍫 4. Decorator Pattern – Extra toppings, altijd welkom (Chef Lochlan)
 
 Zonder toppings is het leven saai.
 
@@ -100,7 +100,7 @@ kunt toevoegen zonder bestaande code aan te passen. Je kunt ze zelfs stapelen. N
 
 ---
 
-### 💸 5. Strategy Pattern – Wie houdt er niet van korting?
+### 💸 5. Strategy Pattern – Wie houdt er niet van korting? (Chef Gijs)
 
 Vandaag 20% korting? Happy Hour? Bulkdeal voor grote bestellingen?
 
@@ -116,7 +116,7 @@ De bakker past zich aan, zonder stress.
 
 ---
 
-### 🔥 6. State Pattern – Van beslag tot perfect gebakken
+### 🔥 6. State Pattern – Van beslag tot perfect gebakken (Chef Lochlan)
 
 Eten doorloopt fases:
 1. Rauw
@@ -136,6 +136,7 @@ Het State pattern:
 In de echte bakkerij werken deze patronen tegelijk:
 - Factory maakt het product
 - State bakt het
+- builder regelt een topping
 - Decorator versiert het
 - Composite bundelt het
 - Strategy bepaalt de prijs
@@ -175,6 +176,13 @@ Alle patterns hebben hun eigen testklasse
 Main.java laat het hele proces zien
 
 Ontworpen om helder, leerzaam en uitbreidbaar te zijn
+
+
+###  👨🏼‍🍳👨🏼‍🍳 Werkverdeling Chefs
+Om in de bakkerij stress te voorkomen en chaos goed the managen hebben onze sterchefs een goede 50/50 verdeling afgesproken om mekaar goed te onderstenen.
+
+De chefs zien in dat een hele bakkerij managen allen niet gaat maar dat het wel essentieel is om van iedere stap iets af te weten en hebben hun werk dus ook op die manier verdeeld.
+
 
 ### 🥞 Tot slot
 
